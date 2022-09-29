@@ -1,21 +1,27 @@
 # Challenge1
 
-**TODO: Add description**
+## Description
 
-## Installation
+See the full description [here](desafio_das_notas.md)
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `challenge_1` to your list of dependencies in `mix.exs`:
+## Solution
 
+You can see the code solution on the file: [lib/solution.ex](lib/solution.ex)
+
+## How to run
+Feel free to test using the following options:
+
+### Elixir
 ```elixir
-def deps do
-  [
-    {:challenge_1, "~> 0.1.0"}
-  ]
-end
+mix app.start
+```
+### Docker
+```shell
+docker build -t challenge_1:latest .
+docker run -it challenge_1
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/challenge_1](https://hexdocs.pm/challenge_1).
-
+### Docker Compose
+```shell
+docker-compose run --rm challenge_1
+```
