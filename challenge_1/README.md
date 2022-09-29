@@ -13,7 +13,7 @@ Feel free to test using the following options:
 
 ### Elixir
 ```elixir
-mix app.start
+mix run lib/entrypoint.exs
 ```
 ### Docker
 ```shell

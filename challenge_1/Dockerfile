@@ -5,5 +5,5 @@ WORKDIR /app
 COPY mix.exs ./
 COPY lib lib
 
-ENTRYPOINT ["mix", "app.start"]
+ENTRYPOINT ["mix", "run", "lib/entrypoint.exs"]
 

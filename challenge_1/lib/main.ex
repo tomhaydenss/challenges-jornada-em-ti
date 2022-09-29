@@ -1,19 +1,15 @@
 defmodule Main do
-  use Application
-
   @default_delimiter " "
 
-  def start(_type, _args) do
+  def start() do
     with {:ok, first_grades} <- read_grades(),
          {:ok, second_grades} <- read_grades() do
       [first, second] = Solution.compare_grades(first_grades, second_grades)
-      "#{first} #{second}"
+
+      IO.puts("#{first} #{second}")
     else
       {:error, _reason} = error -> inspect(error)
     end
-    |> IO.puts()
-
-    {:ok, self()}
   end
 
   defp read_grades do
