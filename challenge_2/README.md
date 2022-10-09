@@ -1,21 +1,27 @@
 # Challenge2
 
-**TODO: Add description**
+## Description
 
-## Installation
+See the full description [here](desafio_da_criptografia.md)
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `challenge_2` to your list of dependencies in `mix.exs`:
+## Solution
 
+You can see the code solution on the file: [lib/solution.ex](lib/solution.ex)
+
+## How to run
+Feel free to test using the following options:
+
+### Elixir
 ```elixir
-def deps do
-  [
-    {:challenge_2, "~> 0.1.0"}
-  ]
-end
+mix run lib/entrypoint.exs
+```
+### Docker
+```shell
+docker build -t challenge_2:latest .
+docker run -it challenge_2
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/challenge_2>.
-
+### Docker Compose
+```shell
+docker-compose run --rm challenge_2
+```
